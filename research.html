@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research & Innovation | Stackly BioTech</title>
+    <meta name="description"
+        content="Stackly BioTech's cutting-edge research programs in nano-bio, quantum computing, neuroregeneration and more.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .research-paper {
+            padding: 2rem;
+            background: #fff;
+            border-radius: 12px;
+            border-left: 5px solid var(--primary);
+            margin-bottom: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.03);
+            transition: transform 0.3s ease;
+        }
+
+        .research-paper:hover {
+            transform: translateX(10px);
+        }
+
+        .paper-tag {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--primary);
+            font-weight: 800;
+        }
+
+        .paper-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin: 0.5rem 0;
+            color: var(--text-main);
+        }
+
+        .paper-meta {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .lab-stat-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .lab-stat {
+            text-align: center;
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .lab-stat h4 {
+            font-size: 1.8rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .lab-stat p {
+            font-size: 0.8rem;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .lab-stat-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 360px) {
+            .lab-stat-grid {
+                grid-template-columns: 1fr;
+            }
+            .research-paper {
+                padding: 1.5rem;
+            }
+            .paper-title {
+                font-size: 1.1rem;
+            }
+        }
+
+        @media (max-width: 320px) {
+            .lab-stat {
+                padding: 1rem;
+            }
+            .lab-stat h4 {
+                font-size: 1.4rem;
+            }
+            .research-paper {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar" id="mainNav">
+        <div class="nav-logo"><a href="index.html"><img src="logo1.webp.png" alt="Stackly BioTech"></a></div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="research.html" class="active">Research & Innovation</a></li>
+        </ul>
+        <div class="auth-btns">
+            <a href="signin.html" class="btn btn-primary" style="font-size:0.88rem;padding:0.6rem 1.2rem;">Sign In</a>
+            <div class="mobile-menu-btn" id="menuToggle">☰</div>
+        </div>
+    </nav>
+
+
+    <!-- SECTION: Where Curiosity Becomes Breakthrough Science -->
+    <section class="feature-row section-bg-light" style="padding: 100px 5%;">
+        <div class="feature-text">
+            <span class="eyebrow">Scientific Foundation</span>
+            <h2>Where Curiosity Becomes Breakthrough Science</h2>
+            <p>Our 380-strong research team publishes over 100 peer-reviewed papers annually, collaborating with MIT,
+                Johns Hopkins, and IIT Madras on next-generation biological platforms.</p>
+            <ul class="feature-list">
+                <li>Nano-bio integration for targeted drug delivery</li>
+                <li>Quantum computing for protein-folding simulation</li>
+                <li>Neuro-regeneration and spinal cord repair</li>
+                <li>Organ-on-a-chip systems for pre-clinical testing</li>
+                <li>Self-evolving genomic circuits for adaptive therapy</li>
+                <li>Atomic-scale peptide synthesis for rare diseases</li>
+            </ul>
+            <div class="lab-stat-grid">
+                <div class="lab-stat" style="background: var(--primary);">
+                    <h4>Over 200+</h4>
+                    <p>Global Patents</p>
+                </div>
+                <div class="lab-stat" style="background: var(--secondary);">
+                    <h4>512-Qubit</h4>
+                    <p>Bio-Processor</p>
+                </div>
+                <div class="lab-stat" style="background: var(--accent);">
+                    <h4>12 Hubs</h4>
+                    <p>Global Lab Network</p>
+                </div>
+                <div class="lab-stat" style="background: #1e293b;">
+                    <h4>$450M</h4>
+                    <p>R&D Investment</p>
+                </div>
+            </div>
+            <a href="404.html" class="btn btn-primary" style="justify-content: center; margin-top: 2rem;">Download Scientific Brief</a>
+        </div>
+        <div class="feature-img">
+            <img src="frontier_discovery_optimized.webp" alt="Frontier Research Discovery Lab">
+        </div>
+    </section>
+
+    <!-- SECTION: Flagship Programs (Unique Horizontal Scroll or Large Cards) -->
+    <section class="section section-bg-white">
+        <div class="section-title">
+            <span class="eyebrow">Flagship Initiatives</span>
+            <h2>Deep Labs & Discovery Programs</h2>
+        </div>
+        <div class="grid-3">
+            <div class="icon-card" style="border-top: 5px solid var(--primary);">
+                <div style="width: 100%; height: 120px; margin-bottom: 1rem; border-radius: 8px; overflow: hidden;">
+                    <img src="quantum_bio_v2.webp" alt="Quantum Bio-Computing" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <h3>Quantum Bio-Computing</h3>
+                <p>Simulating protein folding at the atomic level using 127-qubit processors to fast-track drug
+                    discovery.</p>
+            </div>
+            <div class="icon-card" style="border-top: 5px solid var(--secondary);">
+                <div style="width: 100%; height: 120px; margin-bottom: 1rem; border-radius: 8px; overflow: hidden;">
+                    <img src="self_evolving_genomics.webp" alt="Self-Evolving Genomics" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <h3>Self-Evolving Genomics</h3>
+                <p>Programming synthetic organisms with adaptive genetic circuits that respond to environmental
+                    stressors.</p>
+            </div>
+            <div class="icon-card" style="border-top: 5px solid var(--accent);">
+                <div style="width: 100%; height: 120px; margin-bottom: 1rem; border-radius: 8px; overflow: hidden;">
+                    <img src="neural_scaffolding.webp" alt="Neural Scaffolding" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <h3>Neural Scaffolding</h3>
+                <p>Bio-engineered mesh interfaces that integrate with human brain tissue to restore lost neuro-function.
+                </p>
+            </div>
+            <div class="icon-card" style="border-top: 5px solid #f97316;">
+                <div style="width: 100%; height: 120px; margin-bottom: 1rem; border-radius: 8px; overflow: hidden;">
+                    <img src="nano_surgery.webp" alt="Nano-Surgery" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <h3>Nano-Robotic Surgery</h3>
+                <p>Deploying programmable nano-bots for non-invasive cellular repair and targeted oncology treatment.
+                </p>
+            </div>
+            <div class="icon-card" style="border-top: 5px solid #ec4899;">
+                <div style="width: 100%; height: 120px; margin-bottom: 1rem; border-radius: 8px; overflow: hidden;">
+                    <img src="organ_genesis.webp" alt="Organ Genesis" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <h3>Synthetic Organ Genesis</h3>
+                <p>Scaling 3D bioprinting technology to create fully functional, patient-matched vascularized organs.
+                </p>
+            </div>
+            <div class="icon-card" style="border-top: 5px solid #06b6d4;">
+                <div style="width: 100%; height: 120px; margin-bottom: 1rem; border-radius: 8px; overflow: hidden;">
+                    <img src="astrobiology.webp" alt="Astrobiology" style="width:100%; height:100%; object-fit:cover;">
+                </div>
+                <h3>Astro-Biotech Survival</h3>
+                <p>Developing biological life-support systems and radiation-resistant crops for deep space colonization.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: Publications Journal -->
+    <section class="section section-bg-light">
+        <div class="section-title"
+            style="text-align: left; margin-bottom: 40px; border-left: 10px solid var(--primary); padding-left: 2rem;">
+            <span class="eyebrow">Knowledge Output</span>
+            <h2>Peer-Reviewed Breakthroughs</h2>
+            <p>A selection of our latest contributions to global scientific literature.</p>
+        </div>
+        <div style="max-width: 900px;">
+            <div class="research-paper">
+                <div class="paper-tag">GENOMICS • NATURE BIOTECH</div>
+                <h3 class="paper-title">Nano-lipid mediated CRISPR-Cas12a delivery for hepatocellular oncology</h3>
+                <div class="paper-meta">Rajan A., Priya S., et al. (2026) — Impact Factor: 54.2</div>
+            </div>
+            <div class="research-paper" style="border-left-color: var(--secondary);">
+                <div class="paper-tag">QUANTUM • SCIENCE ADVANCES</div>
+                <h3 class="paper-title">Quantum annealing approaches for multi-target drug-ligand binding</h3>
+                <div class="paper-meta">Zhang L., Stackly Quantum Lab (2026) — Impact Factor: 48.9</div>
+            </div>
+            <div class="research-paper" style="border-left-color: var(--accent);">
+                <div class="paper-tag">NEURO • CELL STEM CELL</div>
+                <h3 class="paper-title">Exosome-laden fibrin hydrogels for spinal functional recovery</h3>
+                <div class="paper-meta">Meenakshi T., Arvind D. (2025) — Impact Factor: 32.1</div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- SECTION: Growth Roadmap (Timeline) -->
+    <section class="section section-bg-white" style="overflow: hidden;">
+        <div class="section-title">
+            <span class="eyebrow">Vision 2030</span>
+            <h2>The Innovation Roadmap</h2>
+        </div>
+        <div class="process-steps">
+            <div class="step">
+                <div class="step-num" style="background: #e2e8f0; color: #64748b;">2024</div>
+                <h4>Foundations</h4>
+                <p>Phase 1 Clinicals for CRISPR-X lung therapy completed.</p>
+            </div>
+            <div class="step">
+                <div class="step-num">2026</div>
+                <h4>Scale</h4>
+                <p>Deployment of global bio-surveillance network nodes.</p>
+            </div>
+            <div class="step">
+                <div class="step-num" style="background: var(--secondary);">2028</div>
+                <h4>Synergy</h4>
+                <p>Launch of the first quantum-designed universal vaccine.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    </section>
+    
+    <!-- SECTION: Open Innovation & Global Partnerships -->
+    <section class="feature-row section-bg-white">
+        <div class="feature-img">
+            <img src="research_collaboration.webp" alt="Collaborative Research Workspace">
+        </div>
+        <div class="feature-text">
+            <span class="eyebrow">Open Innovation</span>
+            <h2>Accelerating Discovery Through Synergy</h2>
+            <p>We believe the most complex biological challenges can only be solved through collective intelligence. Our Open Innovation portal allows academic researchers and biotech startups to leverage our high-throughput infrastructure.</p>
+            <ul class="feature-list">
+                <li>Grant-funded laboratory access programs</li>
+                <li>Joint intellectual property development</li>
+                <li>Seamless technology transfer protocols</li>
+                <li>Cloud-based genomic data collaboration</li>
+            </ul>
+            <a href="404.html" class="btn btn-secondary">Apply for Research Grant</a>
+        </div>
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <img src="logo1.webp.png" alt="Stackly BioTech" class="footer-logo">
+                <p>Leading frontier research in life sciences from Salem, Tamil Nadu.</p>
+                <p style="margin-top:1rem;">research@stacklybiotech.com</p>
+                <p>+91 427 000 0001</p>
+                <div class="footer-socials">
+                    <a href="404.html" class="social-link" title="LinkedIn">
+                        <svg class="social-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="404.html" class="social-link" title="Twitter (X)">
+                        <svg class="social-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                    </a>
+                    <a href="404.html" class="social-link" title="YouTube">
+                        <svg class="social-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.42a2.78 2.78 0 0 0-1.94 2C1 8.11 1 12 1 12s0 3.89.46 5.58a2.78 2.78 0 0 0 1.94 2c1.72.42 8.6.42 8.6.42s6.88 0 8.6-.42a2.78 2.78 0 0 0 1.94-2C23 15.89 23 12 23 12s0-3.89-.46-5.58z"></path><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"></polygon></svg>
+                    </a>
+                    <a href="404.html" class="social-link" title="Instagram">
+                        <svg class="social-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                    <a href="404.html" class="social-link" title="Facebook">
+                        <svg class="social-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="solutions.html">Solutions</a></li>
+                    <li><a href="research.html">Research & Innovation</a></li>
+                    <li><a href="signin.html">Sign In</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Research Programs</h4>
+                <ul>
+                    <li><a href="research-nano.html">Nano-Bio Integration</a></li>
+                    <li><a href="research-quantum.html">Quantum Bio-Computing</a></li>
+                    <li><a href="research-neuro.html">Neuro-Regeneration</a></li>
+                    <li><a href="genomics.html">Genomics</a></li>
+                    <li><a href="synthetic.html">Synthetic Biology</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>📍 Stackly BioTech HQ — Salem, Tamil Nadu</h4>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125026.11542157!2d78.08160411640625!3d11.6625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babf050338ac97f%3A0x2668fc7df35d1f87!2sSalem%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">&copy; 2026 Stackly BioTech Pvt. Ltd. All Rights Reserved. | Salem, Tamil Nadu, India
+        </div>
+    </footer>
+
+    <script src="common.js"></script>
+</body>
+
+</html>
