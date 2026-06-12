@@ -310,6 +310,7 @@
                     <div class="input-container">
                         <span class="field-icon">🔒</span>
                         <input type="password" id="password" class="with-icon" placeholder="••••••••" required>
+                        <span class="eye-icon">👁️</span>
                     </div>
                 </div>
 
@@ -318,6 +319,7 @@
                     <div class="input-container">
                         <span class="field-icon">🔒</span>
                         <input type="password" id="confirmPassword" class="with-icon" placeholder="••••••••" required>
+                        <span class="eye-icon">👁️</span>
                     </div>
                 </div>
             </div>
@@ -350,6 +352,14 @@
             
             // Redirect to dashboard with selected role (simulating successful signup)
             window.location.href = `dashboard.html?role=${role}`;
+        });
+
+        document.querySelectorAll('.eye-icon').forEach(icon => {
+            icon.addEventListener('click', function () {
+                const passwordInput = this.previousElementSibling;
+                const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                passwordInput.setAttribute('type', type);
+            });
         });
     </script>
 </body>

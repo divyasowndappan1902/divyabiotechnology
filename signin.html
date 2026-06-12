@@ -312,6 +312,12 @@
             // Redirect to dashboard with selected role
             window.location.href = `dashboard.html?role=${role}`;
         });
+
+        document.querySelector('.eye-icon').addEventListener('click', function () {
+            const passwordInput = document.getElementById('password');
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+        });
     </script>
 </body>
 
